@@ -1,0 +1,1872 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='_____17516078995780' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='PURPOSE_250M_202403_with_lonlat' inline='true' name='federated.1r98c1j1oc7h7p1dan1zf1rujuu5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PURPOSE_250M_202403_with_lonlat' name='textscan.15gdnq60stctq41brrp101bchalo'>
+            <connection class='textscan' directory='/Users/Star1/Desktop/2025/2025여름/수도권_해커톤/좌표변환' filename='PURPOSE_250M_202403_with_lonlat.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.15gdnq60stctq41brrp101bchalo' name='PURPOSE_250M_202403_with_lonlat.csv' table='[PURPOSE_250M_202403_with_lonlat#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='date' name='ETL_YMD' ordinal='0' />
+            <column datatype='string' name='O_CELL_ID' ordinal='1' />
+            <column datatype='integer' name='O_CELL_TP' ordinal='2' />
+            <column datatype='string' name='D_CELL_ID' ordinal='3' />
+            <column datatype='integer' name='D_CELL_TP' ordinal='4' />
+            <column datatype='integer' name='ST_TIME_CD' ordinal='5' />
+            <column datatype='integer' name='FNS_TIME_CD' ordinal='6' />
+            <column datatype='integer' name='IN_FORN_DIV_NM' ordinal='7' />
+            <column datatype='integer' name='MOVE_PURPOSE' ordinal='8' />
+            <column datatype='integer' name='MOVE_DIST' ordinal='9' />
+            <column datatype='integer' name='MOVE_TIME' ordinal='10' />
+            <column datatype='real' name='MALE_00_CNT' ordinal='11' />
+            <column datatype='real' name='MALE_10_CNT' ordinal='12' />
+            <column datatype='real' name='MALE_20_CNT' ordinal='13' />
+            <column datatype='real' name='MALE_30_CNT' ordinal='14' />
+            <column datatype='real' name='MALE_35_CNT' ordinal='15' />
+            <column datatype='real' name='MALE_40_CNT' ordinal='16' />
+            <column datatype='real' name='MALE_45_CNT' ordinal='17' />
+            <column datatype='real' name='MALE_50_CNT' ordinal='18' />
+            <column datatype='real' name='MALE_55_CNT' ordinal='19' />
+            <column datatype='real' name='MALE_60_CNT' ordinal='20' />
+            <column datatype='real' name='MALE_65_CNT' ordinal='21' />
+            <column datatype='real' name='MALE_70_CNT' ordinal='22' />
+            <column datatype='real' name='MALE_75_CNT' ordinal='23' />
+            <column datatype='real' name='MALE_80_CNT' ordinal='24' />
+            <column datatype='real' name='MALE_85_CNT' ordinal='25' />
+            <column datatype='real' name='FEML_00_CNT' ordinal='26' />
+            <column datatype='real' name='FEML_10_CNT' ordinal='27' />
+            <column datatype='real' name='FEML_15_CNT' ordinal='28' />
+            <column datatype='real' name='FEML_20_CNT' ordinal='29' />
+            <column datatype='real' name='FEML_25_CNT' ordinal='30' />
+            <column datatype='real' name='FEML_30_CNT' ordinal='31' />
+            <column datatype='real' name='FEML_35_CNT' ordinal='32' />
+            <column datatype='real' name='FEML_40_CNT' ordinal='33' />
+            <column datatype='real' name='FEML_45_CNT' ordinal='34' />
+            <column datatype='real' name='FEML_50_CNT' ordinal='35' />
+            <column datatype='real' name='FEML_55_CNT' ordinal='36' />
+            <column datatype='real' name='FEML_60_CNT' ordinal='37' />
+            <column datatype='real' name='FEML_65_CNT' ordinal='38' />
+            <column datatype='real' name='FEML_70_CNT' ordinal='39' />
+            <column datatype='real' name='FEML_75_CNT' ordinal='40' />
+            <column datatype='real' name='FEML_80_CNT' ordinal='41' />
+            <column datatype='real' name='FEML_85_CNT' ordinal='42' />
+            <column datatype='real' name='lon_o' ordinal='43' />
+            <column datatype='real' name='lat_o' ordinal='44' />
+            <column datatype='real' name='lon_d' ordinal='45' />
+            <column datatype='real' name='lat_d' ordinal='46' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETL_YMD</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ETL_YMD]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>ETL_YMD</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>O_CELL_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[O_CELL_ID]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>O_CELL_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>O_CELL_TP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[O_CELL_TP]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>O_CELL_TP</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_CELL_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[D_CELL_ID]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>D_CELL_ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D_CELL_TP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[D_CELL_TP]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>D_CELL_TP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_TIME_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ST_TIME_CD]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>ST_TIME_CD</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FNS_TIME_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FNS_TIME_CD]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FNS_TIME_CD</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IN_FORN_DIV_NM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IN_FORN_DIV_NM]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>IN_FORN_DIV_NM</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MOVE_PURPOSE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MOVE_PURPOSE]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MOVE_PURPOSE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MOVE_DIST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MOVE_DIST]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MOVE_DIST</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MOVE_TIME</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MOVE_TIME]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MOVE_TIME</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_00_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_00_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_00_CNT</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_10_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_10_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_10_CNT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_20_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_20_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_20_CNT</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_30_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_30_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_30_CNT</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_35_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_35_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_35_CNT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_40_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_40_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_40_CNT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_45_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_45_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_45_CNT</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_50_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_50_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_50_CNT</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_55_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_55_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_55_CNT</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_60_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_60_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_60_CNT</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_65_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_65_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_65_CNT</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_70_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_70_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_70_CNT</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_75_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_75_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_75_CNT</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_80_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_80_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_80_CNT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MALE_85_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MALE_85_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>MALE_85_CNT</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_00_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_00_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_00_CNT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_10_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_10_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_10_CNT</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_15_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_15_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_15_CNT</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_20_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_20_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_20_CNT</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_25_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_25_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_25_CNT</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_30_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_30_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_30_CNT</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_35_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_35_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_35_CNT</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_40_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_40_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_40_CNT</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_45_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_45_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_45_CNT</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_50_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_50_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_50_CNT</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_55_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_55_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_55_CNT</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_60_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_60_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_60_CNT</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_65_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_65_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_65_CNT</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_70_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_70_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_70_CNT</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_75_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_75_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_75_CNT</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_80_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_80_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_80_CNT</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FEML_85_CNT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FEML_85_CNT]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>FEML_85_CNT</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lon_o</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon_o]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>lon_o</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat_o</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat_o]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>lat_o</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lon_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon_d]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>lon_d</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat_d]</local-name>
+            <parent-name>[PURPOSE_250M_202403_with_lonlat.csv]</parent-name>
+            <remote-alias>lat_d</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_d:qk]&quot;' value='Destination' />
+          <alias key='&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_o:qk]&quot;' value='Origin' />
+        </aliases>
+      </column>
+      <column caption='D Cell Id' datatype='string' name='[D_CELL_ID]' role='dimension' type='nominal' />
+      <column caption='D Cell Tp' datatype='integer' name='[D_CELL_TP]' role='measure' type='quantitative' />
+      <column caption='Etl Ymd' datatype='date' name='[ETL_YMD]' role='dimension' type='ordinal' />
+      <column caption='Feml 00 Cnt' datatype='real' name='[FEML_00_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 10 Cnt' datatype='real' name='[FEML_10_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 15 Cnt' datatype='real' name='[FEML_15_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 20 Cnt' datatype='real' name='[FEML_20_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 25 Cnt' datatype='real' name='[FEML_25_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 30 Cnt' datatype='real' name='[FEML_30_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 35 Cnt' datatype='real' name='[FEML_35_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 40 Cnt' datatype='real' name='[FEML_40_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 45 Cnt' datatype='real' name='[FEML_45_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 50 Cnt' datatype='real' name='[FEML_50_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 55 Cnt' datatype='real' name='[FEML_55_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 60 Cnt' datatype='real' name='[FEML_60_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 65 Cnt' datatype='real' name='[FEML_65_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 70 Cnt' datatype='real' name='[FEML_70_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 75 Cnt' datatype='real' name='[FEML_75_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 80 Cnt' datatype='real' name='[FEML_80_CNT]' role='measure' type='quantitative' />
+      <column caption='Feml 85 Cnt' datatype='real' name='[FEML_85_CNT]' role='measure' type='quantitative' />
+      <column caption='Fns Time Cd' datatype='integer' name='[FNS_TIME_CD]' role='measure' type='quantitative' />
+      <column caption='In Forn Div Nm' datatype='integer' name='[IN_FORN_DIV_NM]' role='measure' type='quantitative' />
+      <column caption='Male 00 Cnt' datatype='real' name='[MALE_00_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 10 Cnt' datatype='real' name='[MALE_10_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 20 Cnt' datatype='real' name='[MALE_20_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 30 Cnt' datatype='real' name='[MALE_30_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 35 Cnt' datatype='real' name='[MALE_35_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 40 Cnt' datatype='real' name='[MALE_40_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 45 Cnt' datatype='real' name='[MALE_45_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 50 Cnt' datatype='real' name='[MALE_50_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 55 Cnt' datatype='real' name='[MALE_55_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 60 Cnt' datatype='real' name='[MALE_60_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 65 Cnt' datatype='real' name='[MALE_65_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 70 Cnt' datatype='real' name='[MALE_70_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 75 Cnt' datatype='real' name='[MALE_75_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 80 Cnt' datatype='real' name='[MALE_80_CNT]' role='measure' type='quantitative' />
+      <column caption='Male 85 Cnt' datatype='real' name='[MALE_85_CNT]' role='measure' type='quantitative' />
+      <column caption='Move Dist' datatype='integer' name='[MOVE_DIST]' role='measure' type='quantitative' />
+      <column caption='Move Purpose' datatype='integer' name='[MOVE_PURPOSE]' role='measure' type='quantitative' />
+      <column caption='Move Time' datatype='integer' name='[MOVE_TIME]' role='measure' type='quantitative' />
+      <column caption='O Cell Id' datatype='string' name='[O_CELL_ID]' role='dimension' type='nominal' />
+      <column caption='O Cell Tp' datatype='integer' name='[O_CELL_TP]' role='measure' type='quantitative' />
+      <column caption='St Time Cd' datatype='integer' name='[ST_TIME_CD]' role='measure' type='quantitative' />
+      <column caption='PURPOSE_250M_202403_with_lonlat.csv' datatype='table' name='[__tableau_internal_object_id__].[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Lat D' datatype='real' name='[lat_d]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Lat O' datatype='real' name='[lat_o]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Lon D' datatype='real' name='[lon_d]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Lon O' datatype='real' name='[lon_o]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column-instance column='[lat_d]' derivation='Avg' name='[avg:lat_d:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lat_o]' derivation='Avg' name='[avg:lat_o:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lon_o]' derivation='Avg' name='[avg:lon_o:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lat_d]' derivation='None' name='[none:lat_d:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lat_o]' derivation='None' name='[none:lat_o:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0l17pgt1124mq412kgjbd1utnizq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/04/2025 11:51:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ETL_YMD</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ETL_YMD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ETL_YMD</remote-alias>
+              <ordinal>0</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>O_CELL_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[O_CELL_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>O_CELL_ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>480</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>O_CELL_TP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[O_CELL_TP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>O_CELL_TP</remote-alias>
+              <ordinal>2</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>D_CELL_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[D_CELL_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>D_CELL_ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>474</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>D_CELL_TP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[D_CELL_TP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>D_CELL_TP</remote-alias>
+              <ordinal>4</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ST_TIME_CD</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ST_TIME_CD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ST_TIME_CD</remote-alias>
+              <ordinal>5</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FNS_TIME_CD</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FNS_TIME_CD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FNS_TIME_CD</remote-alias>
+              <ordinal>6</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IN_FORN_DIV_NM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IN_FORN_DIV_NM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IN_FORN_DIV_NM</remote-alias>
+              <ordinal>7</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MOVE_PURPOSE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MOVE_PURPOSE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MOVE_PURPOSE</remote-alias>
+              <ordinal>8</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MOVE_DIST</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MOVE_DIST]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MOVE_DIST</remote-alias>
+              <ordinal>9</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>427</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MOVE_TIME</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MOVE_TIME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MOVE_TIME</remote-alias>
+              <ordinal>10</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>399</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_00_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_00_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_00_CNT</remote-alias>
+              <ordinal>11</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_10_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_10_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_10_CNT</remote-alias>
+              <ordinal>12</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_20_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_20_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_20_CNT</remote-alias>
+              <ordinal>13</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_30_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_30_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_30_CNT</remote-alias>
+              <ordinal>14</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_35_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_35_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_35_CNT</remote-alias>
+              <ordinal>15</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_40_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_40_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_40_CNT</remote-alias>
+              <ordinal>16</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_45_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_45_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_45_CNT</remote-alias>
+              <ordinal>17</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_50_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_50_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_50_CNT</remote-alias>
+              <ordinal>18</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_55_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_55_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_55_CNT</remote-alias>
+              <ordinal>19</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_60_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_60_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_60_CNT</remote-alias>
+              <ordinal>20</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_65_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_65_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_65_CNT</remote-alias>
+              <ordinal>21</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_70_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_70_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_70_CNT</remote-alias>
+              <ordinal>22</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_75_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_75_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_75_CNT</remote-alias>
+              <ordinal>23</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_80_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_80_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_80_CNT</remote-alias>
+              <ordinal>24</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MALE_85_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MALE_85_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MALE_85_CNT</remote-alias>
+              <ordinal>25</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_00_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_00_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_00_CNT</remote-alias>
+              <ordinal>26</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_10_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_10_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_10_CNT</remote-alias>
+              <ordinal>27</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_15_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_15_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_15_CNT</remote-alias>
+              <ordinal>28</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_20_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_20_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_20_CNT</remote-alias>
+              <ordinal>29</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_25_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_25_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_25_CNT</remote-alias>
+              <ordinal>30</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_30_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_30_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_30_CNT</remote-alias>
+              <ordinal>31</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_35_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_35_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_35_CNT</remote-alias>
+              <ordinal>32</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_40_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_40_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_40_CNT</remote-alias>
+              <ordinal>33</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_45_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_45_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_45_CNT</remote-alias>
+              <ordinal>34</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_50_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_50_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_50_CNT</remote-alias>
+              <ordinal>35</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_55_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_55_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_55_CNT</remote-alias>
+              <ordinal>36</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_60_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_60_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_60_CNT</remote-alias>
+              <ordinal>37</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_65_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_65_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_65_CNT</remote-alias>
+              <ordinal>38</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_70_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_70_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_70_CNT</remote-alias>
+              <ordinal>39</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_75_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_75_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_75_CNT</remote-alias>
+              <ordinal>40</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_80_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_80_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_80_CNT</remote-alias>
+              <ordinal>41</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FEML_85_CNT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FEML_85_CNT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FEML_85_CNT</remote-alias>
+              <ordinal>42</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lon_o</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lon_o]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lon_o</remote-alias>
+              <ordinal>43</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>480</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lat_o</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lat_o]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lat_o</remote-alias>
+              <ordinal>44</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>480</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lon_d</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lon_d]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lon_d</remote-alias>
+              <ordinal>45</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>474</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lat_d</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lat_d]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lat_d</remote-alias>
+              <ordinal>46</ordinal>
+              <family>PURPOSE_250M_202403_with_lonlat.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>474</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_d:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[none:lat_d:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_o:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_o:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_o:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[none:lat_o:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='ETL_YMD' />
+        <field-sort-custom-order field='O_CELL_ID' />
+        <field-sort-custom-order field='O_CELL_TP' />
+        <field-sort-custom-order field='D_CELL_ID' />
+        <field-sort-custom-order field='D_CELL_TP' />
+        <field-sort-custom-order field='ST_TIME_CD' />
+        <field-sort-custom-order field='FNS_TIME_CD' />
+        <field-sort-custom-order field='IN_FORN_DIV_NM' />
+        <field-sort-custom-order field='MOVE_PURPOSE' />
+        <field-sort-custom-order field='MOVE_DIST' />
+        <field-sort-custom-order field='MOVE_TIME' />
+        <field-sort-custom-order field='MALE_00_CNT' />
+        <field-sort-custom-order field='MALE_10_CNT' />
+        <field-sort-custom-order field='MALE_20_CNT' />
+        <field-sort-custom-order field='MALE_30_CNT' />
+        <field-sort-custom-order field='MALE_35_CNT' />
+        <field-sort-custom-order field='MALE_40_CNT' />
+        <field-sort-custom-order field='MALE_45_CNT' />
+        <field-sort-custom-order field='MALE_50_CNT' />
+        <field-sort-custom-order field='MALE_55_CNT' />
+        <field-sort-custom-order field='MALE_60_CNT' />
+        <field-sort-custom-order field='MALE_65_CNT' />
+        <field-sort-custom-order field='MALE_70_CNT' />
+        <field-sort-custom-order field='MALE_75_CNT' />
+        <field-sort-custom-order field='MALE_80_CNT' />
+        <field-sort-custom-order field='MALE_85_CNT' />
+        <field-sort-custom-order field='FEML_00_CNT' />
+        <field-sort-custom-order field='FEML_10_CNT' />
+        <field-sort-custom-order field='FEML_15_CNT' />
+        <field-sort-custom-order field='FEML_20_CNT' />
+        <field-sort-custom-order field='FEML_25_CNT' />
+        <field-sort-custom-order field='FEML_30_CNT' />
+        <field-sort-custom-order field='FEML_35_CNT' />
+        <field-sort-custom-order field='FEML_40_CNT' />
+        <field-sort-custom-order field='FEML_45_CNT' />
+        <field-sort-custom-order field='FEML_50_CNT' />
+        <field-sort-custom-order field='FEML_55_CNT' />
+        <field-sort-custom-order field='FEML_60_CNT' />
+        <field-sort-custom-order field='FEML_65_CNT' />
+        <field-sort-custom-order field='FEML_70_CNT' />
+        <field-sort-custom-order field='FEML_75_CNT' />
+        <field-sort-custom-order field='FEML_80_CNT' />
+        <field-sort-custom-order field='FEML_85_CNT' />
+        <field-sort-custom-order field='lon_o' />
+        <field-sort-custom-order field='lat_o' />
+        <field-sort-custom-order field='lon_d' />
+        <field-sort-custom-order field='Calculation_5507972740781731840' />
+        <field-sort-custom-order field='lat_d' />
+        <field-sort-custom-order field='Calculation_5507972740781809665' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='PURPOSE_250M_202403_with_lonlat.csv' id='PURPOSE_250M_202403_with_lonlat.csv_6D5722F796524340A1C89000C3ED3FEA'>
+            <properties context=''>
+              <relation connection='textscan.15gdnq60stctq41brrp101bchalo' name='PURPOSE_250M_202403_with_lonlat.csv' table='[PURPOSE_250M_202403_with_lonlat#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='date' name='ETL_YMD' ordinal='0' />
+                  <column datatype='string' name='O_CELL_ID' ordinal='1' />
+                  <column datatype='integer' name='O_CELL_TP' ordinal='2' />
+                  <column datatype='string' name='D_CELL_ID' ordinal='3' />
+                  <column datatype='integer' name='D_CELL_TP' ordinal='4' />
+                  <column datatype='integer' name='ST_TIME_CD' ordinal='5' />
+                  <column datatype='integer' name='FNS_TIME_CD' ordinal='6' />
+                  <column datatype='integer' name='IN_FORN_DIV_NM' ordinal='7' />
+                  <column datatype='integer' name='MOVE_PURPOSE' ordinal='8' />
+                  <column datatype='integer' name='MOVE_DIST' ordinal='9' />
+                  <column datatype='integer' name='MOVE_TIME' ordinal='10' />
+                  <column datatype='real' name='MALE_00_CNT' ordinal='11' />
+                  <column datatype='real' name='MALE_10_CNT' ordinal='12' />
+                  <column datatype='real' name='MALE_20_CNT' ordinal='13' />
+                  <column datatype='real' name='MALE_30_CNT' ordinal='14' />
+                  <column datatype='real' name='MALE_35_CNT' ordinal='15' />
+                  <column datatype='real' name='MALE_40_CNT' ordinal='16' />
+                  <column datatype='real' name='MALE_45_CNT' ordinal='17' />
+                  <column datatype='real' name='MALE_50_CNT' ordinal='18' />
+                  <column datatype='real' name='MALE_55_CNT' ordinal='19' />
+                  <column datatype='real' name='MALE_60_CNT' ordinal='20' />
+                  <column datatype='real' name='MALE_65_CNT' ordinal='21' />
+                  <column datatype='real' name='MALE_70_CNT' ordinal='22' />
+                  <column datatype='real' name='MALE_75_CNT' ordinal='23' />
+                  <column datatype='real' name='MALE_80_CNT' ordinal='24' />
+                  <column datatype='real' name='MALE_85_CNT' ordinal='25' />
+                  <column datatype='real' name='FEML_00_CNT' ordinal='26' />
+                  <column datatype='real' name='FEML_10_CNT' ordinal='27' />
+                  <column datatype='real' name='FEML_15_CNT' ordinal='28' />
+                  <column datatype='real' name='FEML_20_CNT' ordinal='29' />
+                  <column datatype='real' name='FEML_25_CNT' ordinal='30' />
+                  <column datatype='real' name='FEML_30_CNT' ordinal='31' />
+                  <column datatype='real' name='FEML_35_CNT' ordinal='32' />
+                  <column datatype='real' name='FEML_40_CNT' ordinal='33' />
+                  <column datatype='real' name='FEML_45_CNT' ordinal='34' />
+                  <column datatype='real' name='FEML_50_CNT' ordinal='35' />
+                  <column datatype='real' name='FEML_55_CNT' ordinal='36' />
+                  <column datatype='real' name='FEML_60_CNT' ordinal='37' />
+                  <column datatype='real' name='FEML_65_CNT' ordinal='38' />
+                  <column datatype='real' name='FEML_70_CNT' ordinal='39' />
+                  <column datatype='real' name='FEML_75_CNT' ordinal='40' />
+                  <column datatype='real' name='FEML_80_CNT' ordinal='41' />
+                  <column datatype='real' name='FEML_85_CNT' ordinal='42' />
+                  <column datatype='real' name='lon_o' ordinal='43' />
+                  <column datatype='real' name='lat_o' ordinal='44' />
+                  <column datatype='real' name='lon_d' ordinal='45' />
+                  <column datatype='real' name='lat_d' ordinal='46' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+    <mapsource inline='true' name='vworld_2d_satellite' source-platform='mac' version='18.1'>
+      <connection class='OpenStreetMap' max-scale-level='19.0' port='8080' server='http://xdworld.vworld.kr' url-format='/2d/Satellite/service/{Z}/{X}/{Y}.jpeg' />
+      <languages />
+      <layers>
+        <layer display-name='Base' name='base' request-string='/' show-ui='false' type='features' />
+      </layers>
+      <properties />
+      <map-styles />
+      <mapsource-defaults version='18.1'>
+        <style />
+      </mapsource-defaults>
+      <map-attribution copyright-string='© OpenStreetMap' copyright-url='https://www.openstreetmap.org/about' short-copyright-string='' />
+    </mapsource>
+  </mapsources>
+  <worksheets>
+    <worksheet name='도착지 분포(전처리용)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PURPOSE_250M_202403_with_lonlat' name='federated.1r98c1j1oc7h7p1dan1zf1rujuu5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1r98c1j1oc7h7p1dan1zf1rujuu5'>
+            <column-instance column='[lat_d]' derivation='Avg' name='[avg:lat_d:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon_d]' derivation='Avg' name='[avg:lon_d:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat D' datatype='real' name='[lat_d]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Lon D' datatype='real' name='[lon_d]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_d:qk]' field-type='quantitative' max='14792169.324851042' min='13576157.874119198' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_d:qk]' field-type='quantitative' max='4846374.0676516192' min='4152387.7200157801' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <geometry column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_d:qk]</rows>
+        <cols>[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_d:qk]</cols>
+      </table>
+      <simple-id uuid='{0EF98E6E-F616-4A82-AFFA-75F805E312AF}' />
+    </worksheet>
+    <worksheet name='시트 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PURPOSE_250M_202403_with_lonlat' name='federated.1r98c1j1oc7h7p1dan1zf1rujuu5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r98c1j1oc7h7p1dan1zf1rujuu5'>
+            <column caption='Move Dist' datatype='integer' name='[MOVE_DIST]' role='measure' type='quantitative' />
+            <column-instance column='[MOVE_DIST]' derivation='None' name='[none:MOVE_DIST:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MOVE_DIST]' derivation='Sum' name='[sum:MOVE_DIST:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[none:MOVE_DIST:qk]' included-values='in-range'>
+            <min>13</min>
+            <max>6179</max>
+          </filter>
+          <slices>
+            <column>[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[none:MOVE_DIST:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[sum:MOVE_DIST:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[sum:MOVE_DIST:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[sum:MOVE_DIST:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[sum:MOVE_DIST:qk]</cols>
+      </table>
+      <simple-id uuid='{370B9F89-DA25-48B7-A34E-72E8589C4B00}' />
+    </worksheet>
+    <worksheet name='출-도착지 분포'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PURPOSE_250M_202403_with_lonlat' name='federated.1r98c1j1oc7h7p1dan1zf1rujuu5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='vworld_2d_satellite' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1r98c1j1oc7h7p1dan1zf1rujuu5'>
+            <column-instance column='[lat_d]' derivation='Avg' name='[avg:lat_d:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lat_o]' derivation='Avg' name='[avg:lat_o:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon_d]' derivation='Avg' name='[avg:lon_d:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon_o]' derivation='Avg' name='[avg:lon_o:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat D' datatype='real' name='[lat_d]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Lat O' datatype='real' name='[lat_o]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Lon D' datatype='real' name='[lon_d]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Lon O' datatype='real' name='[lon_o]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_d:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_d:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_o:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[:Measure Names]' />
+              <geometry column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_d:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[:Measure Names]' />
+              <geometry column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_o:qk] + [federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_d:qk])</rows>
+        <cols>([federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_o:qk] + [federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_d:qk])</cols>
+      </table>
+      <simple-id uuid='{9146A0E7-9DA5-46BE-9FAA-6A199DBD750C}' />
+    </worksheet>
+    <worksheet name='출발지 분포(전처리용)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PURPOSE_250M_202403_with_lonlat' name='federated.1r98c1j1oc7h7p1dan1zf1rujuu5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1r98c1j1oc7h7p1dan1zf1rujuu5'>
+            <column-instance column='[lat_o]' derivation='Avg' name='[avg:lat_o:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon_o]' derivation='Avg' name='[avg:lon_o:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat O' datatype='real' name='[lat_o]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Lon O' datatype='real' name='[lon_o]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_o:qk]' field-type='quantitative' max='14370174.139343174' min='14066993.723075321' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_o:qk]' field-type='quantitative' max='4504765.8869697284' min='4331738.6760550532' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <geometry column='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lat_o:qk]</rows>
+        <cols>[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[avg:lon_o:qk]</cols>
+      </table>
+      <simple-id uuid='{616D8948-517E-436E-8E37-6CF919B50A0C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='출-도착지 분포'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1r98c1j1oc7h7p1dan1zf1rujuu5].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2997C28-2526-43F4-9256-EF66F7C972B4}' />
+    </window>
+    <window class='worksheet' name='도착지 분포(전처리용)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{399A9957-1345-4BB0-ADA6-F422B0CCE292}' />
+    </window>
+    <window class='worksheet' name='출발지 분포(전처리용)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{16EB8076-C988-466C-B72A-8DB8133925BD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A1394BF-F943-434B-B69E-865C61CF1F5D}' />
+    </window>
+  </windows>
+</workbook>
